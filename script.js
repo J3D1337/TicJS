@@ -5,7 +5,6 @@ const resetBtn = document.querySelector(".new-game");
 const player0 = document.querySelector(".player0");
 const player1 = document.querySelector(".player1");
 const winOrTie = document.querySelector(".win-or-tie");
-const
 let turn = 0;
 let gameOver = false;
 
