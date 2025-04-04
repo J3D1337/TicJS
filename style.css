@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  padding-top: 20px;
+  width: 100%;
+  height: 100vh;
+  background-color: aliceblue;
+}
+
+.game-info {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /* Centers the players by default */
+  position: relative;
+}
+.win-or-tie {
+  display: flex;
+  flex-direction: column;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  height: 10%;
+  justify-content: center;
+  text-align: center;
+}
+
+.players {
+  width: 20%;
+  position: relative;
+  height: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-cont {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.new-game {
+  height: 20%;
+  padding: 10px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  background-color: inherit;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+}
+
+.tic-tac-toe {
+  display: grid;
+  position: relative;
+  padding-top: 10%;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 0;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  background: transparent;
+}
+
+.cell {
+  border: 2px solid rgb(0, 0, 0);
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.cell:nth-child(-n + 3) {
+  border-top: none;
+}
+.cell:nth-child(3n + 1) {
+  border-left: none;
+}
+.cell:nth-child(3n) {
+  border-right: none;
+}
+.cell:nth-last-child(-n + 3) {
+  border-bottom: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.turn-color {
+  background-color: aqua;
+  border-radius: 20px;
+  padding: 20px;
+  transition: 1s;
+}
